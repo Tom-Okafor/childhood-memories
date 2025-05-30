@@ -10,6 +10,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-decoration: none;
+    color: black;
 }
 
 body {
@@ -37,7 +39,7 @@ header {
     -o-border-radius: 50px;
 }
 
-header a {
+nav a {
     text-decoration: none;
     color: black;
     font-size: 16px;
@@ -64,13 +66,18 @@ header a:hover {
     color: var(--color5);
 }
 
-header p {
+header p a {
     font-size: 16px;
     text-transform: capitalize;
     font-weight: 700;
     font-family: cursive;
     color: var(--color1);
     letter-spacing: 2px;
+    transition: all 200ms ease-in-out;
+    -webkit-transition: all 200ms ease-in-out;
+    -moz-transition: all 200ms ease-in-out;
+    -ms-transition: all 200ms ease-in-out;
+    -o-transition: all 200ms ease-in-out;
 }
 
 nav {
@@ -111,7 +118,6 @@ main {
 }
 
 .grid-container a {
-    border: 2px solid var(--color2);
     border-radius: 15px;
     -webkit-border-radius: 15px;
     -moz-border-radius: 15px;
@@ -131,6 +137,22 @@ main {
     padding: 1rem;
     text-decoration: none;
     color: rgba(0, 0, 0, 0.7);
+}
+
+.grid-container a:first-child {
+    background-color: var(--color2);
+}
+
+.grid-container a:nth-child(2) {
+    background-color: var(--color4);
+}
+
+.grid-container a:nth-child(3) {
+    background-color: var(--color5);
+}
+
+.grid-container a:nth-child(4) {
+    background-color: var(--color1);
 }
 
 .grid-container a:hover {
@@ -153,4 +175,56 @@ main {
     font-size: 1.05rem;
     text-align: center;
 
+}
+
+.main_memory-page {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+}
+
+.main_memory-page h2 {
+    color: var(--color1);
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.main_memory-page p {
+    color: black;
+    max-width: 45ch;
+    line-height: 1.3;
+    font-weight: 700;
+    font-family: 'Times New Roman';
+    color: #000000ab;
+}
+
+.memory-card {
+    width: min(80vw, 600px);
+    height: 400px;
+    border: 3px solid var(--color2);
+    box-shadow: 1px 3px 12px var(--color1);
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+    border-radius: 35px;
+    -webkit-border-radius: 35px;
+    -moz-border-radius: 35px;
+    -ms-border-radius: 35px;
+    -o-border-radius: 35px;
+    padding: 2rem;
+}
+
+.memory-card img {
+    width: 200px;
+    aspect-ratio: 1/1;
+    border-radius: 20px 25% 65px 120px;
+    -webkit-border-radius: 20px 25% 65px 120px;
+    -moz-border-radius: 20px 25% 65px 120px;
+    -ms-border-radius: 20px 25% 65px 120px;
+    -o-border-radius: 20px 25% 65px 120px;
+    border: 3px solid var(--color5);
+    object-fit: contain;
 }
