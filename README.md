@@ -1,0 +1,1 @@
+This is a simple PHP project for four common childhood memories. This mini project uses plain php and vanilla css for structure and style. The header and footer are passed into the different pages using the include_once directive.
