@@ -10,12 +10,12 @@
 
 <body>
     <header>
-        <p>childhood memories</p>
+        <p><a href="index.php">childhood memories</a></p>
         <nav>
-            <a href="memory1">memory 1</a>
-            <a href="memory 2">memory 2</a>
-            <a href="memory 3">memory 3</a>
-            <a href="memory 4">memory 4</a>
+            <a href="memory1.php">memory 1</a>
+            <a href="memory2.php">memory 2</a>
+            <a href="memory3.php">memory 3</a>
+            <a href="memory4.php">memory 4</a>
         </nav>
     </header>
 
