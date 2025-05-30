@@ -37,7 +37,7 @@ header {
     -o-border-radius: 50px;
 }
 
-a {
+header a {
     text-decoration: none;
     color: black;
     font-size: 16px;
@@ -60,7 +60,7 @@ a {
     -o-border-radius: 50px;
 }
 
-a:hover {
+header a:hover {
     color: var(--color5);
 }
 
@@ -93,4 +93,64 @@ footer {
     font-family: cursive;
     color: var(--color1);
     letter-spacing: 2px;
+}
+
+main {
+    margin-block: 3rem;
+    display: flex;
+    justify-content: center;
+}
+
+.grid-container {
+    display: grid;
+    width: min(90vw, 400px);
+    aspect-ratio: 1/1;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1rem;
+}
+
+.grid-container a {
+    border: 2px solid var(--color2);
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 200ms ease-in-out;
+    -webkit-transition: box-shadow 200ms ease-in-out;
+    -moz-transition: box-shadow 200ms ease-in-out;
+    -ms-transition: box-shadow 200ms ease-in-out;
+    -o-transition: box-shadow 200ms ease-in-out;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.grid-container a:hover {
+    box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.4);
+}
+
+.grid-container a img {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    object-fit: contain;
+}
+
+.grid-container a h3 {
+    text-transform: capitalize;
+    font-size: 1.05rem;
+    text-align: center;
+
 }

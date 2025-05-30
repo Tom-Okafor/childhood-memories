@@ -12,7 +12,10 @@
     <header>
         <p>childhood memories</p>
         <nav>
-            <a href="memory1">memory 1</a><a href="memory 2">memory 2</a><a href="memory 3">memory 3</a><a href="memory 4">memory 4</a>
+            <a href="memory1">memory 1</a>
+            <a href="memory 2">memory 2</a>
+            <a href="memory 3">memory 3</a>
+            <a href="memory 4">memory 4</a>
         </nav>
     </header>
 
