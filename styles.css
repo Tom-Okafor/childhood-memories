@@ -8,6 +8,8 @@
 
 body {
     min-height: 100dvh;
+    display: flex;
+    flex-direction: column;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     padding: 2rem;
 }
@@ -60,4 +62,21 @@ header p {
 nav {
     display: flex;
     gap: 1rem;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: auto;
+    margin-inline: auto;
+    width: min(100%, 800px);
+    padding-block: 10px;
+    border-top: 3px solid var(--color4);
+    font-size: 16px;
+    text-transform: capitalize;
+    font-weight: 700;
+    font-family: cursive;
+    color: var(--color1);
+    letter-spacing: 2px;
 }
